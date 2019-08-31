@@ -1,8 +1,10 @@
+// Firstly we declare the canvas of the game through the DOM. We have 'tetris' as an ID
 const canvas = document.getElementById('tetris');
 const context = canvas.getContext('2d');
 
 context.scale(10, 10);
 
+// The function to clear the bottom row of the canvas when a player completes a row.
 function arenaSweep() {
     let rowCount = 1;
     outer: for (let y = arena.length -1; y > 0; --y) {
@@ -21,6 +23,7 @@ function arenaSweep() {
     }
 }
 
+// Checking if the current block is colliding with the edges
 function collide(arena, player) {
     const m = player.matrix;
     const o = player.pos;
@@ -44,6 +47,7 @@ function createMatrix(w, h) {
     return matrix;
 }
 
+// A random piece generator which is derived from a random number generator
 function createPiece(type)
 {
     if (type === 'I') {
