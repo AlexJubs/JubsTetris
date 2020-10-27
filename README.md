@@ -3,6 +3,6 @@ I've always used to love playing tetris as a kid, so I decided to make my own ve
 
 A functioning Tetris game with a scoring system. All the blocks are in a shade of green, and the canvas is also much wider but shorter than the traditional Tetris game.
 
-I wrote this in JS
+I wrote this in vanilla JavaScript
 
 https://jubsgames.netlify.com/jubstetris/jubstetris
